@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142BD8A8BDC92A0EF96F1D13 /* Pods_ImagePicsum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE1301078246D5B9A2FDFC9 /* Pods_ImagePicsum.framework */; };
 		FBE4EF10284D8A0A00FFB620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4EF0F284D8A0A00FFB620 /* AppDelegate.swift */; };
 		FBE4EF12284D8A0A00FFB620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4EF11284D8A0A00FFB620 /* SceneDelegate.swift */; };
 		FBE4EF14284D8A0A00FFB620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4EF13284D8A0A00FFB620 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BE1301078246D5B9A2FDFC9 /* Pods_ImagePicsum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePicsum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5ED8AC0E3B334318E61A6D6 /* Pods-ImagePicsum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePicsum.release.xcconfig"; path = "Target Support Files/Pods-ImagePicsum/Pods-ImagePicsum.release.xcconfig"; sourceTree = "<group>"; };
+		CBF8399B7C26B5B8663DCE52 /* Pods-ImagePicsum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePicsum.debug.xcconfig"; path = "Target Support Files/Pods-ImagePicsum/Pods-ImagePicsum.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE4EF0C284D8A0A00FFB620 /* ImagePicsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE4EF0F284D8A0A00FFB620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBE4EF11284D8A0A00FFB620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BD8A8BDC92A0EF96F1D13 /* Pods_ImagePicsum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457C5AE41C10193AEE5B7AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1301078246D5B9A2FDFC9 /* Pods_ImagePicsum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7CE3D523A8F11C56705BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8399B7C26B5B8663DCE52 /* Pods-ImagePicsum.debug.xcconfig */,
+				A5ED8AC0E3B334318E61A6D6 /* Pods-ImagePicsum.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FBE4EF03284D8A0A00FFB620 = {
 			isa = PBXGroup;
 			children = (
 				FBE4EF0E284D8A0A00FFB620 /* ImagePicsum */,
 				FBE4EF0D284D8A0A00FFB620 /* Products */,
+				CE7CE3D523A8F11C56705BEA /* Pods */,
+				457C5AE41C10193AEE5B7AFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBE4EF20284D8A0D00FFB620 /* Build configuration list for PBXNativeTarget "ImagePicsum" */;
 			buildPhases = (
+				5D0A3446F049985F65E45302 /* [CP] Check Pods Manifest.lock */,
 				FBE4EF08284D8A0A00FFB620 /* Sources */,
 				FBE4EF09284D8A0A00FFB620 /* Frameworks */,
 				FBE4EF0A284D8A0A00FFB620 /* Resources */,
+				5128516B2E1E2B9472DD3D32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5128516B2E1E2B9472DD3D32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagePicsum/Pods-ImagePicsum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagePicsum/Pods-ImagePicsum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImagePicsum/Pods-ImagePicsum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0A3446F049985F65E45302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagePicsum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBE4EF08284D8A0A00FFB620 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		FBE4EF21284D8A0D00FFB620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF8399B7C26B5B8663DCE52 /* Pods-ImagePicsum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		FBE4EF22284D8A0D00FFB620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5ED8AC0E3B334318E61A6D6 /* Pods-ImagePicsum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
